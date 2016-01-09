@@ -1,0 +1,25 @@
+{
+  "name": "smarttv-youtube",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mario Lamacchia <mario@appstrakt.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mariolamacchia/smarttv-youtube",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "jquery": "1.10.2"
+  },
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "jquery-mobile": "~1.4.5"
+  }
+}
