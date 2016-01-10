@@ -1,5 +1,5 @@
-body {
-  background: #c1bebe; /* For browsers that do not support gradients */
+.ui-page.ui-page-theme-a.ui-page-active {
+  background: #c1bebe;
   background-image: url(images/logo.png);
   background-image: url(images/logo.png), linear-gradient(to right, #e3dcdc, #7e7a7a);
   background-position: center;

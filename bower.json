@@ -1,12 +1,12 @@
 {
-  "name": "smarttv-youtube",
-  "description": "",
+  "name": "smarttv-empty",
+  "description": "Empty app for SmartTv",
   "main": "index.js",
   "authors": [
-    "Mario Lamacchia <mario@appstrakt.com>"
+    "Mario Lamacchia <mariolamacchia@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/mariolamacchia/smarttv-youtube",
+  "homepage": "https://github.com/mariolamacchia/smarttv-empty",
   "moduleType": [],
   "ignore": [
     "**/.*",
@@ -16,7 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~1.10.2",
-    "jquery-mobile": "~1.4.5"
+    "smarttv": "*",
+    "jquery": "~1.10.0",
+    "jquery.mobile": "jquery-mobile-bower#~1.4.5"
   }
 }

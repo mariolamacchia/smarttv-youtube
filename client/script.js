@@ -1,44 +1,27 @@
-(function() {
+(function(smarttv) {
+  'use strict';
+
   $(document).on('pageinit', function(event){
     $(window).on('swiperight', function(e) {
-      sendEvent('keyDown', 'right');
-      sendEvent('keyUp', 'right');
+      smarttv.pressKey('right');
       e.stopPropagation();
     });
     $(window).on('swipeleft', function(e) {
-      sendEvent('keyDown', 'left');
-      sendEvent('keyUp', 'left');
+      smarttv.pressKey('left');
       e.stopPropagation();
     });
     $(window).on('swipeup', function(e) {
-      sendEvent('keyDown', 'up');
-      sendEvent('keyUp', 'up');
+      smarttv.pressKey('down');
       e.stopPropagation();
     });
     $(window).on('swipedown', function(e) {
-      sendEvent('keyDown', 'down');
-      sendEvent('keyUp', 'down');
+      smarttv.pressKey('down');
       e.stopPropagation();
     });
     $(window).on('click', function(e) {
-      sendEvent('keyDown', 'enter');
-      sendEvent('keyUp', 'enter');
+      smarttv.pressKey('enter');
       e.stopPropagation();
     });
   });
 
-  function sendEvent(type, key) {
-    $.ajax('http://192.168.0.212:8000/api/inputs', {
-      method: 'POST',
-      contentType: 'application/json',
-      data: JSON.stringify({
-        type: type,
-        keyCode: key
-      })
-    });
-  }
-
-  function showKeyboard() {
-    $('.hidden-input').focus();
-  }
-})();
+})(smarttv);
