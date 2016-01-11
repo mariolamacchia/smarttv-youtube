@@ -16,7 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "smarttv": "*",
     "jquery": "~1.10.0",
     "jquery.mobile": "jquery-mobile-bower#~1.4.5"
   }
