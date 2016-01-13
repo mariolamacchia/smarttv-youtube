@@ -1,5 +1,6 @@
 {
-    "name": "YouTube",
+    "name": "youtube",
+    "title": "YouTube",
     "icon": "icon.png",
     "url": "https://youtube.com/tv"
 }
